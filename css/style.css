@@ -1,0 +1,75 @@
+:root{
+    --headercolor: black;
+    --headerfont: white;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+/* Header */
+
+#nav-list{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: center;
+    position: fixed;
+    padding: 0;
+    background-color: var(--headercolor);
+}
+
+
+#nav-list li,
+#nav-list li a{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    display: inline-block;
+    color: var(--headerfont);
+    text-decoration: none;
+    justify-content: flex-end;
+    font-size: 1.2rem;
+    padding: 15px 10px;
+    transition: background .3s;
+}
+
+#nav-list li:first-child {
+    font-size: 1.5rem;
+    margin-left: 30%;
+    margin-right: 10%;
+}
+
+#nav-list li:last-child{
+    margin-right: 20%;
+}
+
+#nav-list li:nth-child(n+2):hover{
+    background-color: rgb(49, 49, 49);   
+}
+
+
+/* Presentation Section */
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} 
