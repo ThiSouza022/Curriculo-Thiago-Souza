@@ -166,6 +166,7 @@ article {
     font-family: DroidSans;
     font-size: 1.3rem;
     padding: 5px 20px;
+    margin-bottom: 10px;
 }
 
 
@@ -173,8 +174,8 @@ article {
     margin: 0;
     display: flex;
     font-size: 1.5rem;
-    width: 250px;
-    padding: 10px 15px;
+    width: 300px;
+    padding-left: 15px;
 }
 
 .presentation-container .social-icon {
@@ -237,7 +238,6 @@ article {
     width: 100%;
     display: flex;
     background-color: #f6f6f6;
-    ;
     padding: 100px 0;
 
 }
@@ -307,11 +307,33 @@ article {
 /* Skills Section */
 
 #skills {
-    min-height: 100vh;
+    min-height: 80vh;
     width: 100%;
     display: flex;
     align-items: center;
     background-color: var(--background);
+    padding: 10% 20%;
+    margin: 0;
+}
+
+#skill-container{
+    margin: 0;
+}
+
+
+#skills h1 {
+    font-family: RobotoSlabBold;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#skills ul li {
+    font-family: Archivo-Regular;
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    line-height: 25px;
 }
 
 /* Certificates Section */
@@ -325,6 +347,10 @@ article {
     padding: 10% 20%;
 }
 
+#certificates-container{
+    margin: 0; 
+}
+
 #certificates h1 {
     font-family: RobotoSlabBold;
     font-size: 1.5rem;
@@ -335,7 +361,7 @@ article {
     font-family: Archivo-Regular;
     list-style: none;
     margin-bottom: 10px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     letter-spacing: 1px;
     line-height: 25px;
 }
@@ -427,7 +453,7 @@ article {
 #footer h1 {
     font-family: RobotoSlabBold;
     color: white;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 1.3rem;
     letter-spacing: 1px;
 }
@@ -481,7 +507,7 @@ article {
 
     0% {
         opacity: 0;
-        transform: translate3d(-50px, 100px, 0);
+        transform: translate3d(-100px, 100px, 0);
     }
 
     70% {
@@ -490,7 +516,7 @@ article {
 
     100% {
         opacity: 1;
-        transform: translate3d(-50px, 0, 0);
+        transform: translate3d(-100px, 0, 0);
     }
 }
 
@@ -498,7 +524,7 @@ article {
 
     0% {
         opacity: 1;
-        transform: translate3d(-50px, 0, 0);
+        transform: translate3d(-100px, 0, 0);
     }
 
     40% {
@@ -507,7 +533,7 @@ article {
 
     100% {
         opacity: 0;
-        transform: translate3d(-50px, 100px, 0);
+        transform: translate3d(-100px, 100px, 0);
     }
 }
 
