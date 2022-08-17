@@ -33,6 +33,20 @@
     --background: #f6f6f6;
 }
 
+[data-theme="dark"] {
+    --headercolor: #353a40;
+    --headerfont: white;
+    --background: black;
+}
+
+[data-theme="colorblind"] {
+    animation: colorblindanimation 30s infinite;
+}
+
+[data-theme="epilepsy"] {
+    filter: saturate(50%);
+}
+
 * {
     margin: 0 auto;
     padding: 0;
@@ -61,6 +75,10 @@ html {
 
 .hidden {
     visibility: hidden;
+}
+
+.display-none{
+    display:none;
 }
 
 
@@ -116,6 +134,64 @@ html {
     background-color: rgb(49, 49, 49);
 }
 
+/* Acessibility */
+
+#acessibility{
+    opacity: 1;
+    position: fixed;
+    color: white;
+    right: 50px;
+    bottom: 50px;
+    z-index: 3; 
+    max-width: 300px;
+}
+
+#acessibility-btn{
+    opacity: 0;
+    border-radius: 100px;
+    padding: 5px;
+    border: 0;
+    background-color: white;
+    animation: opacity .3s ease-in-out forwards .2s;
+}
+
+#acessibility-btn:hover{
+    background-color: #aaaaaa;
+    transition: .3s ease;
+}
+
+#acessibility-icon img{
+    width: 50px;
+}
+
+#acessibility-options button{
+    opacity: 0;
+    padding: 20px;
+    border: 0;
+    animation: btnreveal .2s ease-in-out forwards .2s; 
+}
+
+#acessibility-options button:nth-child(2){
+    animation-delay: .3s;
+}
+#acessibility-options button:nth-child(3){
+    animation-delay: .4s;
+}
+#acessibility-options button:nth-child(4){
+    animation-delay: .5s;
+}
+
+#acessibility-options button:hover{
+    transition: .3s ease;
+    background-color: #8d8e8f;
+}
+
+.theme-btn{
+    font-family: Archivo-Regular;
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 10px;
+}
 
 /* Presentation Section */
 
@@ -136,7 +212,7 @@ html {
     flex-direction: row;
     flex-wrap: nowrap;
     margin: 0 10%;
-    justify-content: center;
+    justify-content: center;  
 }
 
 .presentation-container figure,
@@ -146,12 +222,15 @@ article {
 }
 
 .presentation-container img {
+    opacity: 0;
     width: 200px;
     border-radius: 180px;
     margin: 0;
+    animation: presentationimg .4s ease-in-out forwards .2s;
 }
 
 .presentation-container h1 {
+    opacity: 0;
     display: flex;
     align-items: center;
     height: 70px;
@@ -160,22 +239,29 @@ article {
     text-transform: uppercase;
     padding: 5px 20px;
     margin-top: 20px;
+    animation: presentationup .4s ease-in-out forwards .2s;
 }
 
 .presentation-container h2 {
+    opacity: 0;
     font-family: DroidSans;
     font-size: 1.3rem;
     padding: 5px 20px;
     margin-bottom: 10px;
+    animation: presentationdown .4s ease-in-out forwards .2s;
+    animation-delay: 600ms;
 }
 
 
 .presentation-container #social-icons {
+    opacity: 0;
     margin: 0;
     display: flex;
     font-size: 1.5rem;
     width: 300px;
     padding-left: 15px;
+    animation: presentationdown .5s ease-in-out forwards .2s;
+    animation-delay: 1000ms;
 }
 
 .presentation-container .social-icon {
@@ -492,7 +578,6 @@ article {
 
 [data-anime].animate {
     animation: reveal .4s ease-in-out forwards .2s;
-
 }
 
 [data-anime].animateoff {
@@ -502,6 +587,83 @@ article {
 
 
 /* Keyframes */
+
+@keyframes colorblindanimation {
+    0%{
+        filter: hue-rotate(60deg);
+    }
+    50%{
+        filter: hue-rotate(180deg);
+    }
+    100%{
+        filter: hue-rotate(60deg);
+    }
+}
+
+@keyframes opacity {
+
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes btnreveal{
+    0%{
+        opacity: 0;
+        transform: translate3d(100px, 0, 0);
+    }
+    30%{
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes presentationimg{
+    0%{
+        opacity: 0;
+        transform: translate3d(0, -100px, 0);
+    }
+   
+    100%{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        
+    }
+}
+
+@keyframes presentationup{
+    20%{
+        opacity: 0;
+        transform: translate3d(0, 40px, 0);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);   
+    }
+}
+
+@keyframes presentationdown{
+    0%{
+        opacity: 0;
+        transform: translate3d(0, -100px, 0);
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translate3d(0, 0, 0); 
+    }
+}
+
 
 @keyframes reveal {
 
