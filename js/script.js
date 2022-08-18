@@ -1,9 +1,9 @@
 const acessibilityoptions = document.querySelector("#acessibility-options");
 const acessibilitybtn = document.querySelector("#acessibility-btn");
-
 const target = document.querySelectorAll('[data-anime]');
 
 
+/* Nav Name and acessibility button show/hide Function */
 function animeScroll() {
   const windowTop = window.pageYOffset;
   target.forEach(function (e) {
@@ -34,7 +34,7 @@ if (currentTheme) {
 }
 
 
-/* Acessibility Functions */
+/* Acessibility Function*/
 
 function AcessibilityOptionsShow() {
   acessibilityoptions.classList.remove("display-none");

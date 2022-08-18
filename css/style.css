@@ -33,9 +33,11 @@
     --background: #f6f6f6;
     --fontcolor: white;
     --nav-hover: rgb(49, 49, 49);
-    --acessibility-bg: #353a40;
+    --nav-list-mb: white;
+    --nav-list-mb-bg: rgb(37, 37, 37);
+    --acessibility-bg: #202125;
     --acessibility-btn-color:white;
-    --acessibility-btn-bg:#353a40;
+    --acessibility-btn-bg:#202125;
     --acessibility-bg-hover: #c0491a;
     --presentation-h: black;
     --presentation-h2: black;
@@ -65,6 +67,8 @@
     --headerfont: white;
     --background: #353a40;
     --fontcolor: white;
+    --nav-list-mb: white;
+    --nav-list-mb-bg: rgb(37, 37, 37);
     --nav-hover: rgb(49, 49, 49);
     --acessibility-bg: #181717;
     --acessibility-btn-color:black;
@@ -105,6 +109,7 @@
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 
@@ -112,6 +117,10 @@ html {
     max-width: 100%;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    
+}
+body{
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -147,6 +156,7 @@ html {
 
 #nav-max-width {
     max-width: 1450px;
+    height: 79px;
     list-style: none;
     display: flex;
     flex-wrap: nowrap;
@@ -200,7 +210,26 @@ html {
 
 #nav-list li:hover {
     background-color: var(--nav-hover);
+}
 
+#nav-list .checkbtn{
+    font-family: DroidSans;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    font-weight: 700;
+    line-height: 10px;
+    color: white;
+    margin:0;  
+    right: 90px;
+    top: 17px;
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+#check:checked ~ ul{
+    right: 0%;
 }
 
 /* Acessibility */
@@ -297,7 +326,6 @@ article {
 .presentation-container figure {
     width: 200px;
     height: 200px;
-
 }
 
 
@@ -403,6 +431,7 @@ article {
     font-size: 1.2rem;
     letter-spacing: 1px;
     line-height: 30px;
+    user-select: text;
 }
 
 
@@ -640,12 +669,14 @@ article {
     margin-bottom: 20px;
     font-size: 1.3rem;
     letter-spacing: 1px;
+    user-select: text;
 }
 
 #footer p {
     font-family: DroidSans;
     font-size: 1.3rem;
     margin-bottom: 30px;
+    user-select: text;
 }
 
 #footer a {
