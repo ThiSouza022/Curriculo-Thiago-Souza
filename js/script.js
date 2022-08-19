@@ -3,7 +3,7 @@ const acessibilitybtn = document.querySelector("#acessibility-btn");
 const target = document.querySelectorAll('[data-anime]');
 
 
-/* Nav Name and acessibility button show/hide Function */
+/* Nav Name show/hide Function */
 function animeScroll() {
   const windowTop = window.pageYOffset;
   target.forEach(function (e) {

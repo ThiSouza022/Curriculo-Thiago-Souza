@@ -36,8 +36,8 @@
     --nav-list-mb: white;
     --nav-list-mb-bg: rgb(37, 37, 37);
     --acessibility-bg: #202125;
-    --acessibility-btn-color:white;
-    --acessibility-btn-bg:#202125;
+    --acessibility-btn-color: white;
+    --acessibility-btn-bg: #202125;
     --acessibility-bg-hover: #c0491a;
     --presentation-h: black;
     --presentation-h2: black;
@@ -71,8 +71,8 @@
     --nav-list-mb-bg: rgb(37, 37, 37);
     --nav-hover: rgb(49, 49, 49);
     --acessibility-bg: #181717;
-    --acessibility-btn-color:black;
-    --acessibility-btn-bg:#f6f6f6;
+    --acessibility-btn-color: black;
+    --acessibility-btn-bg: #f6f6f6;
     --acessibility-bg-hover: #c0491a;
     --presentation-h: white;
     --presentation-h2: rgb(255, 255, 255);
@@ -117,9 +117,10 @@ html {
     max-width: 100%;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    
+
 }
-body{
+
+body {
     overflow-x: hidden;
 }
 
@@ -212,7 +213,7 @@ body{
     background-color: var(--nav-hover);
 }
 
-#nav-list .checkbtn{
+#nav-list .checkbtn {
     font-family: DroidSans;
     position: absolute;
     display: none;
@@ -220,15 +221,17 @@ body{
     font-weight: 700;
     line-height: 10px;
     color: white;
-    margin:0;  
+    margin: 0;
     right: 90px;
     top: 17px;
     cursor: pointer;
 }
-#check{
+
+#check {
     display: none;
 }
-#check:checked ~ ul{
+
+#check:checked~ul {
     right: 0%;
 }
 
@@ -474,7 +477,6 @@ article {
     text-align: center;
     transition: all 0.3s ease 0s;
     text-decoration: none;
-
 }
 
 .project-card:hover {
@@ -657,7 +659,6 @@ article {
     width: 100%;
     display: flex;
     background-color: var(--footer-bg);
-    color: white;
     text-align: center;
     padding: 60px 0 120px;
 }
@@ -677,6 +678,7 @@ article {
     font-size: 1.3rem;
     margin-bottom: 30px;
     user-select: text;
+    color: white;
 }
 
 #footer a {

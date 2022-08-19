@@ -1,6 +1,6 @@
-@media only screen and (max-width: 1100px){
-    
-    #nav-list .checkbtn{
+@media only screen and (max-width: 1100px) {
+
+    #nav-list .checkbtn {
         display: block;
     }
 
@@ -19,32 +19,38 @@
         transition: all .5s;
         padding: 0;
     }
-    #nav-list ul li{
+
+    #nav-list ul li {
         width: 100%;
         height: 100%;
         max-width: 1100px;
         max-height: 100px;
         padding-top: 30px;
     }
-    #nav-list ul li a{
+
+    #nav-list ul li a {
         color: var(--nav-list-mb);
         width: 100%;
         max-width: 1100px;
         padding: 12px 0 0;
         font-size: 1.2rem;
     }
-    .presentation-container h1{
+
+    .presentation-container h1 {
         font-size: 3.5rem;
     }
+
     .lbox .box_img {
         padding: 0 15%;
     }
 
-
 }
 
-@media only screen and (max-width: 890px){
-    /* Diminuir tamanho dos cards e deixar a apresentação collumn */
+@media only screen and (max-width: 890px) {
+    #nav-list h1 {
+        font-size: 1.4rem;
+    }
+
     .presentation-container {
         width: 100%;
         height: 100%;
@@ -54,52 +60,317 @@
         justify-content: center;
         margin: 0;
     }
-    .presentation-container figure{
+
+    .presentation-container figure {
         width: 100%;
+        height: 170px;
     }
-    .presentation-container article{
+
+    .presentation-container img {
+        width: 170px;
+    }
+
+    .presentation-container article {
         display: flex;
         justify-content: center;
         flex-direction: column;
         text-align: center;
         align-items: center;
     }
-    .presentation-container h1{
-        font-size: 4rem;
+
+    .presentation-container h1 {
+        font-size: 3.5rem;
     }
-    .presentation-container h2{
+
+    .presentation-container h2 {
+        font-size: 1.2rem;
+    }
+
+    .presentation-container #social-icons {
+        justify-content: center;
+        font-size: 1.3rem;
+        width: 100%;
+        padding: 0;
+    }
+
+    .presentation-container .social-icon {
+        height: 40px;
+        width: 40px;
+    }
+
+
+    .about-container h1 {
         font-size: 1.4rem;
     }
+
+    .about-container p {
+        text-align: left;
+        font-size: 1.1rem;
+    }
+
+    #projects-name {
+        font-size: 1.4rem;
+    }
+
+    .project-card {
+        margin: 20px 10px;
+        width: 250px;
+        height: 270px;
+    }
+
+    .project-card img {
+        padding: 10px;
+        width: 250px;
+        height: 127px;
+    }
+
+    .project-card h1 {
+        font-size: 1.2rem;
+    }
+
+    .project-card p {
+        font-size: 1rem;
+    }
+
+    #skills h1 {
+        font-size: 1.4rem;
+        margin-bottom: 17px;
+    }
+
+    #skills ul li {
+        text-align: left;
+        font-size: 1.1rem;
+        line-height: 25px;
+    }
+
+    #certificates h1 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+
+    #certificates ul li {
+        font-size: 1.1rem;
+        text-align: left;
+    }
 }
-@media only screen and (max-width: 650px){
-    /* colocar os textos em left, diminuir fontes, colocar padding no footer */
-    #nav-max-width{
+
+@media only screen and (max-width: 687px) {
+    #nav-max-width {
         padding: 0 20px;
     }
-    #nav-list .checkbtn{
+
+    #nav-list .checkbtn {
         font-weight: 700;
         line-height: 10px;
         right: 20px;
     }
-    .about-container{
+
+    .about-container {
         padding: 0 20px;
     }
-    #projects .max-width{
+
+    #projects .max-width {
         padding: 0 20px;
     }
-    #skill-container{
+
+    #skill-container {
         padding: 0 20px;
     }
-    #certificates-container{
+
+    #certificates-container {
         padding: 0 20px;
     }
-    #footer{
+
+    #prev {
+        left: 3%;
+        top: 47%;
+    }
+
+    #next {
+        right: 3%;
+        top: 47%;
+    }
+
+    #close {
+        font-size: 30px;
+        right: 3%;
+    }
+
+    #footer {
         padding: 60px 20px 120px;
     }
+
+    #footer h1 {
+        font-size: 1.2rem;
+    }
+
+    #footer p {
+        font-size: 1.2rem;
+    }
+
+    #footer a {
+        font-size: .9rem;
+        padding: 10px;
+        margin: 0 10px;
+        border-radius: 5px;
+    }
 }
 
-@media only screen and (max-width: 435px){
-    /* Arrumar tamanho dos textos*/
-   
-}
+@media only screen and (max-width: 600px) {
+    #nav-list h1 {
+        font-size: 1.1rem;
+    }
 
+    #nav-list .checkbtn {
+        font-size: 1rem;
+        line-height: 7px;
+        right: 30px;
+        top: 20px;
+    }
+
+    #nav-list ul li a {
+        font-size: 1rem;
+    }
+
+    #acessibility {
+        right: 30px;
+        bottom: 30px;
+    }
+
+    #acessibility-btn {
+        padding: 7px;
+    }
+
+    #acessibility-icon img {
+        width: 25px;
+        height: 22px;
+    }
+
+    #acessibility-options button {
+        padding: 20px;
+    }
+
+    .theme-btn {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .presentation-container figure {
+        height: 100px;
+    }
+
+    .presentation-container img {
+        width: 100px;
+    }
+
+    .presentation-container h1 {
+        font-size: 2.2rem;
+        margin-top: 0;
+        height: 50px;
+    }
+
+    .presentation-container h2 {
+        font-size: .9rem;
+        padding-top: 4px;
+    }
+
+    .presentation-container #social-icons {
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    .presentation-container .social-icon {
+        height: 34px;
+        width: 34px;
+    }
+
+    .about-container h1 {
+        font-size: 1.1rem;
+    }
+
+    .about-container p {
+        font-size: .9rem;
+        line-height: 25px;
+    }
+
+    #projects-name {
+        font-size: 1.1rem;
+    }
+
+    .project-card {
+        margin: 20px 0;
+        width: 100%;
+        height: 280px;
+        max-width: 320px;
+    }
+
+    .project-card img {
+        padding: 10px;
+        width: 100%;
+        height: 150px;
+    }
+
+    .project-card h1 {
+        font-size: 1.1rem;
+    }
+
+    .project-card p {
+        font-size: .9rem;
+    }
+
+    #skills h1 {
+        font-size: 1.1rem;
+        margin-bottom: 17px;
+    }
+
+    #skills ul li {
+        font-size: .9rem;
+        line-height: 25px;
+    }
+
+    #certificates h1 {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+
+    #certificates ul li {
+        font-size: .9rem;
+        text-align: left;
+    }
+
+    #prev {
+        left: 3%;
+        top: 48%;
+        font-size: 28px;
+    }
+
+    #next {
+        right: 3%;
+        top: 48%;
+        font-size: 28px;
+    }
+
+    #close {
+        font-size: 25px;
+        right: 3%;
+    }
+
+    #footer {
+        padding: 60px 20px 120px;
+    }
+
+    #footer h1 {
+        font-size: 1.1rem;
+    }
+
+    #footer p {
+        font-size: 1rem;
+    }
+
+    #footer a {
+        font-size: .8rem;
+        padding: 8px;
+        margin: 0 5px;
+    }
+
+}
