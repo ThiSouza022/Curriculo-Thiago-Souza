@@ -1,3 +1,4 @@
+const main = document.querySelector("main");
 const acessibilityoptions = document.querySelector("#acessibility-options");
 const acessibilitybtn = document.querySelector("#acessibility-btn");
 const target = document.querySelectorAll('[data-anime]');
@@ -41,13 +42,22 @@ if (currentTheme) {
 }
 
 
-// Acessibility Function
+// Acessibility Options Show/Hide
 
 function AcessibilityOptionsShow() {
   acessibilityoptions.classList.remove("display-none");
   acessibilitybtn.classList.add("display-none");
 }
 
+
+function AcessibilityOptionsHide(){
+  acessibilitybtn.classList.remove("display-none");
+  acessibilityoptions.classList.add("display-none");
+}
+main.addEventListener('click', AcessibilityOptionsHide);
+
+
+// Acessibility Function
 
 function LightTheme() {
   document.documentElement.setAttribute("data-theme", "light");

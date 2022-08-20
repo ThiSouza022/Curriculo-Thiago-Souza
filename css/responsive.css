@@ -4,7 +4,7 @@
         display: block;
     }
 
-    #nav-list ul{
+    #nav-list ul {
         position: fixed;
         display: flex;
         flex-direction: column;
