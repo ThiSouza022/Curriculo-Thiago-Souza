@@ -1,8 +1,8 @@
 const acessibilityoptions = document.querySelector("#acessibility-options");
 const acessibilitybtn = document.querySelector("#acessibility-btn");
 const target = document.querySelectorAll('[data-anime]');
-const navoptions=document.querySelector("#nav-options");
-const checkbox=document.querySelector("#check");
+const navoptions = document.querySelector("#nav-options");
+const checkbox = document.querySelector("#check");
 
 
 //Nav Name show/hide Function 
@@ -28,8 +28,8 @@ window.addEventListener('scroll', function () {
 })
 
 // Nav Checkbox Function
-navoptions.addEventListener('click', function (){
-  if(checkbox.checked=true){
+navoptions.addEventListener('click', function () {
+  if (checkbox.checked = true) {
     checkbox.checked = false;
   }
 })

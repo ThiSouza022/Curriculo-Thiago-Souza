@@ -4,7 +4,7 @@
         display: block;
     }
 
-    #nav-list ul {
+    #nav-list ul{
         position: fixed;
         display: flex;
         flex-direction: column;
@@ -216,9 +216,10 @@
 }
 
 @media only screen and (max-width: 600px) {
-    #nav-max-width{
+    #nav-max-width {
         height: 60px;
     }
+
     #nav-list h1 {
         font-size: 1.1rem;
     }
@@ -229,7 +230,8 @@
         right: 30px;
         top: 13px;
     }
-    #nav-list ul{
+
+    #nav-list ul {
         top: 60px;
     }
 
