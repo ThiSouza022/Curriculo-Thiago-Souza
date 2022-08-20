@@ -34,8 +34,6 @@ navoptions.addEventListener('click', function (){
   }
 })
 
-
-
 // Acessibility localStorage
 const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
 if (currentTheme) {
