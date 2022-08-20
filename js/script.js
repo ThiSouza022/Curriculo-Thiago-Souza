@@ -1,9 +1,11 @@
 const acessibilityoptions = document.querySelector("#acessibility-options");
 const acessibilitybtn = document.querySelector("#acessibility-btn");
 const target = document.querySelectorAll('[data-anime]');
+const navoptions=document.querySelector("#nav-options");
+const checkbox=document.querySelector("#check");
 
 
-/* Nav Name show/hide Function */
+//Nav Name show/hide Function 
 function animeScroll() {
   const windowTop = window.pageYOffset;
   target.forEach(function (e) {
@@ -25,16 +27,23 @@ window.addEventListener('scroll', function () {
   animeScroll();
 })
 
+// Nav Checkbox Function
+navoptions.addEventListener('click', function (){
+  if(checkbox.checked=true){
+    checkbox.checked = false;
+  }
+})
 
 
-/*acessibility localStorage*/
+
+// Acessibility localStorage
 const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
 if (currentTheme) {
   document.documentElement.setAttribute('data-theme', currentTheme);
 }
 
 
-/* Acessibility Function*/
+// Acessibility Function
 
 function AcessibilityOptionsShow() {
   acessibilityoptions.classList.remove("display-none");
