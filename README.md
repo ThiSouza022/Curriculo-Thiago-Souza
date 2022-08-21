@@ -7,7 +7,7 @@
   
   
   
-  <a href=" https://thisouza022.github.io/Curriculo-Thiago-Souza/"> Acessar o Currículo! </a>
+  <a href="https://thisouza022.github.io/Curriculo-Thiago-Souza"> Acessar o Currículo! </a>
 
  
  <h2 align="center"> 
